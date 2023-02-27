@@ -1,0 +1,28 @@
+{
+    "eventData":[
+        {
+            "date":1676541490000,
+            "time":"10:12 AM",
+            "title":"My Test Event",
+            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting."
+        },
+        {
+            "date":1676541490000,
+            "time":"02:30 PM",
+            "title":"Happy Birthday",
+            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting."
+        },
+        {
+            "date":1676541490000,
+            "time":"10:30 AM",
+            "title":"Trip to Ladakh",
+            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting."
+        },
+        {
+            "date":1676541490000,
+            "time":"07: AM",
+            "title":"Arrive airport by time",
+            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting."
+        }
+    ]
+}

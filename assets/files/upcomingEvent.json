@@ -1,0 +1,53 @@
+{
+    "upcomingEvents":[
+        {
+            "date":1676541490000,
+            "time":"10:12 AM",
+            "title":"My Test Event",
+            "tag":"Marriage",
+            "details":{
+                "name":"John",
+                "phone":"123-456-789",
+                "address":"5 East Purbachal Canal Road, Kolkata",
+                "amount":"5000"
+            }
+            
+        },
+        {
+            "date":1676541490000,
+            "time":"02:30 PM",
+            "title":"Happy Birthday To Your Company",
+            "tag":"Happy",
+            "details":{
+                "name":"John",
+                "phone":"123-456-789",
+                "address":"5 East Purbachal Canal Road, Kolkata",
+                "amount":"1000"
+            }
+        },
+        {
+            "date":1676541490000,
+            "time":"10:30 AM",
+            "title":"Trip to Ladakh",
+            "tag":"Tour",
+            "details":{
+                "name":"John",
+                "phone":"123-456-789",
+                "address":"5 East Purbachal Canal Road, Kolkata",
+                "amount":"65000"
+            }
+        },
+        {
+            "date":1676541490000,
+            "time":"07: AM",
+            "title":"Arrive airport by time",
+            "tag":"Meeting",
+            "details":{
+                "name":"John",
+                "phone":"123-456-789",
+                "address":"5 East Purbachal Canal Road, Kolkata",
+                "amount":"5000"
+            }
+        }
+    ] 
+}
