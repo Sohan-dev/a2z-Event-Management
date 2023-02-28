@@ -105,8 +105,11 @@ class _LoginState extends State<Login> {
             ),
             Container(
               decoration: const BoxDecoration(
-                  color: Color(0xFFFF833E),
-                  borderRadius: BorderRadius.all(Radius.circular(40.0))),
+                color: Color(0xFFFF833E),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(40.0),
+                ),
+              ),
               height: 50.0,
               width: 300,
               child: InkWell(

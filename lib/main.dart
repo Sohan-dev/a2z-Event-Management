@@ -3,6 +3,8 @@ import 'package:a2z_event/screens/Auth/Signup.dart';
 import 'package:a2z_event/screens/Auth/Splash.dart';
 import 'package:a2z_event/screens/Event/EventDetails.dart';
 import 'package:a2z_event/screens/Home/Dashboard.dart';
+import 'package:a2z_event/screens/Home/Home.dart';
+import 'package:a2z_event/screens/Work%20Assigment/WorkAssignment.dart';
 import 'package:a2z_event/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -27,6 +29,8 @@ class MyApp extends StatelessWidget {
         Routes.loginRoute: ((context) => const Login()),
         Routes.dashboardRoute: ((context) => const Dashboard()),
         Routes.eventDetailsRoute: ((context) => const EventDetails()),
+        Routes.workAssignment: ((context) => const WorkAssignment()),
+        Routes.homeRoute: ((context) => const Home()),
       },
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );

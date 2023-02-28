@@ -1,8 +1,14 @@
+import 'package:a2z_event/screens/Work%20Assigment/WorkAssignment.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../screens/Home/Home.dart';
+import '../utils/routes.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -17,18 +23,6 @@ class MyDrawer extends StatelessWidget {
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
-            // DrawerHeader(
-            //   padding: EdgeInsets.zero,
-            //   child: UserAccountsDrawerHeader(
-            //     margin: EdgeInsets.zero,
-            //     accountName: const Text('Shubhankar'),
-            //     accountEmail: const Text('account@gmail.com'),
-            // currentAccountPicture: CircleAvatar(
-            //   backgroundImage: NetworkImage(_imageURL),
-            // ),
-            //   ),
-            // ),
-
             Container(
               height: 150,
               width: double.infinity,
@@ -85,6 +79,28 @@ class MyDrawer extends StatelessWidget {
               ),
             ),
 
+            InkWell(
+              onTap: () {
+                Navigator.of(context).pushNamed(Routes.homeRoute);
+              },
+              splashColor: Colors.white,
+              child: ListTile(
+                leading: const Icon(
+                  CupertinoIcons.home,
+                  color: Colors.white,
+                ),
+                title: Text(
+                  'Home',
+                  textScaleFactor: 1.2,
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: GoogleFonts.poppins(
+                              textStyle: Theme.of(context).textTheme.bodyMedium)
+                          .fontFamily),
+                ),
+              ),
+            ),
+
             GestureDetector(
               onTap: () {
                 print('work assignment');
@@ -131,7 +147,7 @@ class MyDrawer extends StatelessWidget {
 
             GestureDetector(
               onTap: () {
-                print('work assignment');
+                Navigator.of(context).pushNamed(Routes.workAssignment);
               },
               // ignore: sized_box_for_whitespace
               child: Container(

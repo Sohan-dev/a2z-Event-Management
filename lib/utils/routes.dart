@@ -5,4 +5,6 @@ class Routes {
   static String onboardRoute = '/onboard';
   static String dashboardRoute = '/dasgboard';
   static String eventDetailsRoute = '/dasgboard';
+  static String workAssignment = '/workassignment';
+  static String homeRoute = '/homeroute';
 }
