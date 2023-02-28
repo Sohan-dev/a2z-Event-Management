@@ -1,6 +1,7 @@
 import 'package:a2z_event/screens/Auth/Login.dart';
 import 'package:a2z_event/screens/Auth/Signup.dart';
 import 'package:a2z_event/screens/Auth/Splash.dart';
+import 'package:a2z_event/screens/Employee/AddEmployee.dart';
 import 'package:a2z_event/screens/Event/EventDetails.dart';
 import 'package:a2z_event/screens/Home/Dashboard.dart';
 import 'package:a2z_event/screens/Home/Home.dart';
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
         Routes.eventDetailsRoute: ((context) => const EventDetails()),
         Routes.workAssignment: ((context) => const WorkAssignment()),
         Routes.homeRoute: ((context) => const Home()),
+        Routes.addEmployee: ((context) => const AddEmployee()),
       },
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );

@@ -78,7 +78,7 @@ class MyDrawer extends StatelessWidget {
                 ],
               ),
             ),
-
+            // Home
             InkWell(
               onTap: () {
                 Navigator.of(context).pushNamed(Routes.homeRoute);
@@ -100,7 +100,7 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
             ),
-
+            // My Profile
             GestureDetector(
               onTap: () {
                 print('work assignment');
@@ -144,7 +144,7 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
             ),
-
+            // Work Assigment
             GestureDetector(
               onTap: () {
                 Navigator.of(context).pushNamed(Routes.workAssignment);
@@ -192,7 +192,7 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
             ),
-
+            // Work History
             GestureDetector(
               onTap: () {
                 print('work assignment');
@@ -240,10 +240,10 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
             ),
-
+            // Add employee
             GestureDetector(
               onTap: () {
-                print('work assignment');
+                Navigator.of(context).pushNamed(Routes.addEmployee);
               },
               // ignore: sized_box_for_whitespace
               child: Container(
@@ -288,7 +288,7 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
             ),
-
+            // User Settings
             GestureDetector(
               onTap: () {
                 print('work assignment');

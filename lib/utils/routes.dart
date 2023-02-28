@@ -7,4 +7,5 @@ class Routes {
   static String eventDetailsRoute = '/dasgboard';
   static String workAssignment = '/workassignment';
   static String homeRoute = '/homeroute';
+  static String addEmployee = '/addEmployee';
 }
