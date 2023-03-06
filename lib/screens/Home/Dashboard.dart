@@ -10,6 +10,7 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../Navigation/BottomNavigation.dart';
+import '../../utils/routes.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -395,37 +396,6 @@ class _DashboardState extends State<Dashboard> {
     );
 
     return Scaffold(
-      // appBar: AppBar(
-      //   elevation: 0,
-      //   backgroundColor: Colors.white,
-      //   iconTheme: const IconThemeData(color: Colors.green),
-      //   actions: [
-      //     IconButton(
-      //       icon: const Icon(Icons.add_alert_rounded),
-      //       tooltip: 'Show Notifications',
-      //       onPressed: () {
-      //         ScaffoldMessenger.of(context).showSnackBar(
-      //           const SnackBar(
-      //             content: Text('This is a snackbar'),
-      //           ),
-      //         );
-      //       },
-      //     ),
-      //     IconButton(
-      //       icon: const Icon(Icons.account_circle_rounded),
-      //       tooltip: 'Show Notifications',
-      //       onPressed: () {
-      //         ScaffoldMessenger.of(context).showSnackBar(
-      //           const SnackBar(
-      //             content: Text('This is a snackbar'),
-      //           ),
-      //         );
-      //       },
-      //     ),
-      //   ],
-      // ),
-
-      // drawer: Drawer(),
       body: Column(
         children: [
           Row(
@@ -433,7 +403,7 @@ class _DashboardState extends State<Dashboard> {
               Expanded(
                 flex: 1,
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 8.0, top: 8.0),
+                  padding: const EdgeInsets.only(left: 18.0, top: 8.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -463,10 +433,13 @@ class _DashboardState extends State<Dashboard> {
               ),
               Expanded(
                 flex: 1,
-                child: InkWell(
-                  child: Padding(
-                    padding: const EdgeInsets.only(
-                        left: 58.0, right: 20.0, top: 20.0),
+                child: Padding(
+                  padding:
+                      const EdgeInsets.only(left: 58.0, right: 20.0, top: 20.0),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.of(context).pushNamed(Routes.addEvent);
+                    },
                     child: Container(
                       height: 40,
                       decoration: BoxDecoration(
@@ -477,13 +450,13 @@ class _DashboardState extends State<Dashboard> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: const [
                           Text(
-                            'Week View',
+                            'Add Event',
                             style: TextStyle(color: Colors.white),
                           ),
-                          Icon(
-                            Icons.arrow_drop_down,
-                            color: Colors.white,
-                          )
+                          // Icon(
+                          //   Icons.arrow_drop_down,
+                          //   color: Colors.white,
+                          // )
                         ],
                       ),
                     ),
@@ -492,7 +465,7 @@ class _DashboardState extends State<Dashboard> {
               ),
             ],
           ),
-          Container(
+          SizedBox(
             height: 80,
             width: double.infinity,
             child: calendarView,

@@ -195,7 +195,7 @@ class MyDrawer extends StatelessWidget {
             // Work History
             GestureDetector(
               onTap: () {
-                print('work assignment');
+                Navigator.of(context).pushNamed(Routes.workHistory);
               },
               // ignore: sized_box_for_whitespace
               child: Container(

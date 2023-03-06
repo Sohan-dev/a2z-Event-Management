@@ -142,7 +142,7 @@ class _AddEmployeeState extends State<AddEmployee> {
                 borderRadius: BorderRadius.circular(12),
               ),
               child: TextField(
-                keyboardType: TextInputType.number,
+                keyboardType: TextInputType.text,
                 decoration: InputDecoration(
                   labelText: 'Email Address',
                   labelStyle: TextStyle(
@@ -268,8 +268,15 @@ class _AddEmployeeState extends State<AddEmployee> {
                   ),
                 ),
                 _image != null
-                    ? Image.file(_image!,
-                        width: 100, height: 100, fit: BoxFit.contain)
+                    ? Container(
+                        width: 100,
+                        height: 100,
+                        decoration: BoxDecoration(
+                          // color: const Color(0xFFF1EFEF),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Image.file(_image!, fit: BoxFit.contain),
+                      )
                     : Container(
                         margin: const EdgeInsets.all(16),
                         height: 100,
@@ -332,7 +339,7 @@ class _AddEmployeeState extends State<AddEmployee> {
                   ),
                 ),
               ],
-            )
+            ),
           ],
         ),
       ),

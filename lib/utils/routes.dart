@@ -8,4 +8,6 @@ class Routes {
   static String workAssignment = '/workassignment';
   static String homeRoute = '/homeroute';
   static String addEmployee = '/addEmployee';
+  static String addEvent = '/addEvent';
+  static String workHistory = '/workHistory ';
 }
