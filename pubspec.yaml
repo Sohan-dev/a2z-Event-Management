@@ -43,6 +43,7 @@ dependencies:
   path_provider: ^2.0.13
   syncfusion_flutter_datepicker: ^20.4.52
   intl: ^0.18.0
+  shared_preferences: ^2.0.17
 
 dev_dependencies:
   flutter_test:

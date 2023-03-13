@@ -8,6 +8,7 @@ class TextWidget extends StatelessWidget {
   final MaterialColor color, borderColor;
   final String placeholder;
   final String? label;
+  final String? hintText;
   final double radius;
   final bool obsecureText;
   final bool showPasswordEye;
@@ -32,6 +33,7 @@ class TextWidget extends StatelessWidget {
       this.onSaved,
       this.validator,
       required this.onChanged,
+      this.hintText,
       this.label});
 
   @override
@@ -46,7 +48,7 @@ class TextWidget extends StatelessWidget {
         onSaved: (data) => {onSaved!(data)},
         validator: (value) {
           if (value!.isEmpty) {
-            return 'UID is required';
+            return hintText;
           }
           return null;
         },
