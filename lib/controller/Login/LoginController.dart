@@ -37,11 +37,13 @@ class LoginController extends GetxController {
 
   void checkLogin() {
     final isValid = formState.currentState!.validate();
+    print(isValid);
     if (isValid) {
-      login();
+      // login();
     }
   }
 
+// call the login method with api Call
   Future<void> login() async {
     try {
       isLoading.value = true;

@@ -1,13 +1,11 @@
-import 'package:a2z_event/screens/Work%20Assigment/WorkAssignment.dart';
+// ignore: file_names
+import 'package:a2z_event/authManager/authentication_manager.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_core/get_core.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../screens/Home/Home.dart';
 import '../utils/routes.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -15,7 +13,9 @@ class MyDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _imageURL =
+    final AuthecticationManager _authManager = Get.put(AuthecticationManager());
+
+    const imageURL =
         'https://avatars.githubusercontent.com/u/63089604?s=400&u=2045aedfba60ba723b1ff2034880a89ad0d7143c&v=4';
     return Drawer(
       child: Container(
@@ -446,6 +446,7 @@ class MyDrawer extends StatelessWidget {
             // ),
 
             InkWell(
+              onTap: () => {_authManager.logout()},
               splashColor: Colors.white,
               child: ListTile(
                 leading: const Icon(
